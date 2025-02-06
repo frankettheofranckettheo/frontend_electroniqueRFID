@@ -16,7 +16,6 @@ import Image from 'next/image';
 
 export default function Sidebar() {
   const pathname = usePathname();
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const menuItems = [
     { label: 'Dashboard', icon: FaHome, href: '/' },

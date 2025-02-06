@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {  VehiculeNonConforme, MotifNonConformite,VignetteAutomobile,LicenceTransport,ControleTechnique,Assurance, User,ApiResponse } from '@/types';
+import {  VehiculeNonConforme,MotifNonConformite,ApiResponse } from '@/types';
 
 
 interface Vehicule {

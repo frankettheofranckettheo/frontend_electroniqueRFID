@@ -31,7 +31,7 @@ export function usePagination({
     const halfMaxPages = Math.floor(maxPages / 2);
 
     let startPage = Math.max(currentPage - halfMaxPages, 1);
-    let endPage = Math.min(startPage + maxPages - 1, totalPages);
+    const endPage = Math.min(startPage + maxPages - 1, totalPages);
 
     if (endPage - startPage + 1 < maxPages) {
       startPage = Math.max(endPage - maxPages + 1, 1);

@@ -43,7 +43,7 @@ const VehiculesNonConformes: React.FC = () => {
   const router = useRouter();  // Correct usage of useRouter for client-side navigation
 
   if (isLoading) return <div className="text-center p-4">Chargement...</div>;
-  if (error instanceof Error) return <div className="text-center p-4">Une erreur s'est produite: {error.message}</div>;
+  if (error instanceof Error) return <div className="text-center p-4">Une erreur s&apos;est produite: {error.message}</div>;
 
   // Pagination
   const totalItems = data?.length || 0;

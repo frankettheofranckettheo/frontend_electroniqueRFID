@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { IconType } from 'react-icons';
 
 interface StatCardProps {
   title: string;

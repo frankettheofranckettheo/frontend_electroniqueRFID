@@ -1,6 +1,7 @@
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
 import { IoArrowBack } from "react-icons/io5";
+import Link from "next/link";
 
 interface Vehicule {
   id?: number;
@@ -50,10 +51,10 @@ const VehiculeDetailsPage = async ({ params }: { params: { tagRfid?: string } })
     <div className="space-y-8 p-6 bg-gray-100 min-h-screen">
       {/* Flèche de retour */}
       <div className="flex items-center mb-6">
-        <a href="/vehicules" className="text-blue-500 hover:text-blue-700 flex items-center space-x-2">
+        <Link href="/vehicules" className="text-blue-500 hover:text-blue-700 flex items-center space-x-2">
           <IoArrowBack size={24} />
           <span className="text-lg font-semibold">Retour</span>
-        </a>
+        </Link>
       </div>
 
       <div className="bg-white p-8 shadow-lg rounded-lg space-y-6">
@@ -101,8 +102,8 @@ const VehiculeDetailsPage = async ({ params }: { params: { tagRfid?: string } })
           <div className="mt-8">
             <h3 className="text-xl font-semibold">Vignette Automobile:</h3>
             <p><strong>Numéro de vignette:</strong> {vehicule.vignette.numeroVignette}</p>
-            <p><strong>Date d'émission:</strong> {formatDate(vehicule.vignette.dateEmission)}</p>
-            <p><strong>Date d'expiration:</strong> {formatDate(vehicule.vignette.dateExpiration)}</p>
+            <p><strong>Date d&apos;émission:</strong> {formatDate(vehicule.vignette.dateEmission)}</p>
+            <p><strong>Date d&apos;expiration:</strong> {formatDate(vehicule.vignette.dateExpiration)}</p>
           </div>
         )}
 

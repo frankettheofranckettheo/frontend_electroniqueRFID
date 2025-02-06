@@ -18,7 +18,7 @@ export default function ParametresPage() {
           <h1 className="page-title">Paramètres</h1>
         </div>
         <p className="page-subtitle">
-          Configurez les paramètres de l'application selon vos besoins
+          Configurez les paramètres de l&apos;application selon vos besoins
         </p>
       </div>
 
@@ -131,13 +131,13 @@ export default function ParametresPage() {
       {/* Préférences d'affichage */}
       <div className="card">
         <div className="p-6">
-          <h2 className="text-lg font-semibold mb-4">Préférences d'affichage</h2>
+          <h2 className="text-lg font-semibold mb-4">Préférences d&apos;affichage</h2>
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <div>
                 <p className="font-medium">Mode sombre</p>
                 <p className="text-sm text-gray-500">
-                  Activer le thème sombre de l'application
+                  Activer le thème sombre de l&apos;application
                 </p>
               </div>
               <label className="switch">
