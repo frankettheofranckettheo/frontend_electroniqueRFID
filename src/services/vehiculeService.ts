@@ -36,7 +36,7 @@ export const vehiculeService = {
     try {
       const response = await api.get('/vehicules');
       return response.data;
-    } catch (error) {
+    } catch (_error) {
       throw new Error('Erreur lors de la récupération des véhicules');
     }
   },
@@ -45,7 +45,7 @@ export const vehiculeService = {
     try {
       const response = await apimin.get(`/vehicules/tag/${tagRFID}`);
       return response.data;
-    } catch (error) {
+    } catch (_error) {
       throw new Error(`Erreur lors de la récupération du véhicule avec le tag ${tagRFID}`);
     }
   },
@@ -56,7 +56,7 @@ export const vehiculeService = {
     try {
       const response = await api.get('/vehicules-non-conformes');
       return response.data;
-    } catch (error) {
+    } catch (_error) {
       throw new Error('Erreur lors de la récupération des véhicules non conformes');
     }
   },
@@ -86,7 +86,7 @@ export const vehiculeService = {
         success: true,
         message: 'Statistiques récupérées avec succès',
       };
-    } catch (error) {
+    } catch (_error) {
       return {
         data: {
           totalVehicules: 0,
@@ -95,7 +95,7 @@ export const vehiculeService = {
           enAttente: 0,
         },
         success: false,
-        message: (error as Error).message,
+        message: (_error as Error).message,
       };
     }
   }
