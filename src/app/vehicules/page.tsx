@@ -21,7 +21,7 @@ interface MotifNonConformite {
 }
 
 export default function VehiculesPage() {
-  const [searchTerm, _setSearchTerm] = useState('');
+  const searchTerm = useState('');
   const [selectedMotifs, setSelectedMotifs] = useState<MotifNonConformite[] | null>(null);
 
   const fetchVehicules = async (): Promise<Vehicule[]> => {
